@@ -27,11 +27,11 @@
 - DataFrame imported from Pandas
 
 ## Functions
-### svd (in SVD.py) - 
+### svd (in SVD.py)
 	Takes a list as an input 
 	returns the original matrix by performing u * diagnolized(s) * transpose(v)
 
-### svd (in SVD_VS_CUR.py) -
+### svd (in SVD_VS_CUR.py)
 	Takes a list as an input 
 	returns a 2d list(u) and a 1d list(eigen values) and 2d list(v)
 
@@ -42,7 +42,7 @@
 ### randrange 
 	Utility function to debug the code
 
-### dataToMatrix -
+### dataToMatrix
 	Takes a list as input
 	and returns a matrix 
 	it converts the user-item data from the file into a matrix
@@ -57,3 +57,28 @@
 	Then selects top m rows and n columns with highest probabilities respectively
 	Then computes row and col and u
 	and then computes the original matrix by performing col * u * row
+
+## Usage
+### Packages to be installed
+	Numpy
+	Pandas
+	Matplotlib
+
+### SVD Decomposition
+	Take input values in a .csv file.
+	Give the input path file location in open command.
+	The code prints error generated on svd decomposition.
+	Uncomment savetext line to print the output matrix to a csv file.
+
+### CUR Decomposition
+	Take input values in a .csv file.
+	Give the input path file location in open command.
+	The code prints error generated on cur decomposition.
+	Uncomment savetext line to print the output matrix to a csv file.
+
+### SVD_VS_CUR
+	Take input values in a .csv file.
+	Give the input path file location in open command.
+	The code generates two 3d plots:
+		1.Number of rows-X, Number of columns-Y, Error-Z
+		2.Number of rows-X, Number of columns-Y, Time-Z
